@@ -1,0 +1,15 @@
+{
+	"app_name": "expo-cookiecutter",
+    "direction_name": "{{cookiecutter.app_name.lower().replace(' ', '_').replace('-', '_')}}",
+    "sentry_integration": "required",
+    "sentry_preproduction": "required",
+    "sentry_production": "required",
+    "api_dev": "required",
+    "api_integration": "required",
+    "api_preproduction": "required",
+    "api_production": "required",
+    "primaryColor": "#7a3f47",
+    "secondColor": "#343434",
+    "backgroundColor": "#ebeaa7",
+    "textColor": "#343434"
+}
