@@ -4,6 +4,7 @@ import {
 } from 'react-navigation';
 
 import HomeScreen from './HomeScreen';
+import SettingScreen from './SettingScreen';
 import theme from '../common/theme';
 
 const HomeStack = createStackNavigator({
@@ -11,6 +12,15 @@ const HomeStack = createStackNavigator({
     screen: HomeScreen,
     navigationOptions: {
       title: 'Home',
+      headerStyle: {
+        backgroundColor: theme.primaryColor,
+      },
+    },
+  },
+  Settings: {
+    screen: SettingScreen,
+    navigationOptions: {
+      title: 'Setting',
       headerStyle: {
         backgroundColor: theme.primaryColor,
       },

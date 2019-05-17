@@ -102,3 +102,9 @@ export const TextColorStyle = styled.View`
   border-width: 0.5;
   background-color: ${props => (props.theme.textColor)};
 `;
+
+export const TouchableWrapper = styled.TouchableOpacity`
+  align-items: center;
+  background-color: ${props => (props.theme.primaryColor)};
+  margin-vertical: 15px;
+`;
