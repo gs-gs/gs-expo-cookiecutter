@@ -2,10 +2,15 @@
 A cookiecutter template for expo apps, done the way we currently like it.
 
 # Convenient features
-- Easy to config direction name, app name, sentry, api,...
+- It is good for data collection through forms.
+- Uses store-and-forward approach for offline first approach.
+- Updates made easy through Expo SDK via OTA update mechanism.
+- Easy to focus on data: what do you want to capture? what do you want to send?
+- For more bespoke development (via custom native libraries) it's a good starting point for an "detached" experience (e.g. via ExpoKit).
+- Multi-platform (react-native), if you need to support android and ios.
 - Integrates many technical with react native.
- 
-# Technical 
+
+ # Technical 
 - **React native**: React Native lets you build mobile apps using only JavaScript. It uses the same design as React, letting you compose a rich mobile UI using declarative components.The apps you are building with React Native aren't mobile web apps because React Native uses the same fundamental UI building blocks as regular iOS and Android apps. Instead of using Swift, Kotlin or Java, you are putting those building blocks together using JavaScript and React.React Native lets you build your app faster. Instead of recompiling, you can reload your app instantly. With Hot Reloading, you can even run new code while retaining your application state.
 - **Redux** : a predictable state container for JavaScript apps.Redux makes it easy to manage the state of your application. Another way of looking at this – it helps you manage the data you display and how you respond to user actions. Redux include store, action, reducers, dispatch.
 - **React redux** (version 6): the official React binding for Redux. It lets your React components read data from a Redux store, and dispatch actions to the store to update data. We use version 6 of React-Redux because of the version 7 uses Hook API, which isn't supported by Expo at the moment.
@@ -19,7 +24,7 @@ Access to device capabilities like camera, location, notifications, sensors, hap
 - **Jest**: the most widely used JavaScript unit testing framework, so you may be even be familiar with it already. This guide explains how to set up Jest in your project, write a unit test, write a snapshot test, and common problems that people encounter when using Jest in React Native.
 - **React native debugger**: debug the program.
 
-# Library
+ # Library
 - react-native: https://facebook.github.io/react-native/
 - react-redux@6: https://redux.js.org/
 - redux-saga:  https://redux-saga.js.org
@@ -31,7 +36,7 @@ Access to device capabilities like camera, location, notifications, sensors, hap
 - jest-expo: https://docs.expo.io/versions/latest/guides/testing-with-jest/
 - redux-devtools-extension :https://github.com/zalmoxisus/redux-devtools-extension
 
-# Intruction
+ # Intruction
 - Step 1: 
   ```
   git clone https://github.com/gs-gs/gs-expo-cookiecutter.git
@@ -42,20 +47,18 @@ Access to device capabilities like camera, location, notifications, sensors, hap
   ```
 - Step 3: Input needed information.
 ```
-^^/zigvy >>> cookiecutter gs-expo-cookiecutter/                                                      
+^^/GoSource >>> cookiecutter gs-expo-cookiecutter/                                                            
 app_name [expo-cookiecutter]: cookiecutter
 direction_name [cookiecutter]: cookiecutter
-sentry_integration [required]: https://zigvy.com                                          
-sentry_preproduction [required]: https://zigvy.com
-sentry_production [required]: https://zigvy.com
-api_dev [required]: https://zigvy.com
-api_integration [required]: https://zigvy.com
-api_preproduction [required]: https://zigvy.com
-api_production [required]: https://zigvy.com
+sentry_integration [required]: https://gosource.com.au/                                                
+sentry_preproduction [required]: https://gosource.com.au/
+sentry_production [required]: https://gosource.com.au/
+api_dev [required]: https://gosource.com.au/
+api_integration [required]: https://gosource.com.au/
+api_preproduction [required]: https://gosource.com.au/
+api_production [required]: https://gosource.com.au/
 primaryColor [#7a3f47]: red              
 secondColor [#343434]: blue
 backgroundColor [#ebeaa7]: white
 textColor [#343434]: #343434
 ```
-
- 
