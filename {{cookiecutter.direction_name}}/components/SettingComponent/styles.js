@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 
 export const SettingsContainerViewStyled = styled.View`
   flex: 1 0;
-  background-color: ${props => props.theme.backgroundColor.whiteFlour};
+  background-color: white;
 `;
 
 export const SectionHeader = styled.View`
@@ -70,5 +70,9 @@ export const AuthenticationWrapperViewStyled = styled.TouchableHighlight`
 export const AuthenticationWrapperTextStyled = styled.Text`
   font-size: 15px;
   text-align: center;
+  font-weight: bold;
+`;
+
+export const HeaderTextStyled = styled.Text`
   font-weight: bold;
 `;
