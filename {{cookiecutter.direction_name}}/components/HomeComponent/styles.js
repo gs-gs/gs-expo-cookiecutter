@@ -66,7 +66,6 @@ export const ColorContainer = styled.View`
 
 export const TextItem = styled.Text`
   font-size: ${props => (props.status ? 18 : 14)};
-  word-wrap: wrap;
   margin-top: 5;
   overflow: hidden;
 `;

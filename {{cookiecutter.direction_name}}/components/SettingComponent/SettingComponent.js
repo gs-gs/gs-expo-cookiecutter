@@ -22,8 +22,8 @@ import {
   ButtonWrapper,
   AuthenticationWrapperViewStyled,
   AuthenticationWrapperTextStyled,
+  HeaderTextStyled,
 } from './styles';
-// import AuthenticationButton from '../../containers/AuthenticationButton';
 
 const elapsedTime = time => (
   moment(time).fromNow()
@@ -31,7 +31,7 @@ const elapsedTime = time => (
 
 const _renderSectionHeader = ({ section }) => ( // eslint-disable-line no-underscore-dangle
   <SectionHeader>
-    <Text style={{ fontWeight: 'bold' }}>{section.title}</Text>
+    <HeaderTextStyled>{section.title}</HeaderTextStyled>
   </SectionHeader>
 );
 
