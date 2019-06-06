@@ -26,7 +26,10 @@ const getSentryUrl = () => {
   return SENTRY_URL.integration;
 };
 const sentryUrl = getSentryUrl();
+
+{% if cookiecutter.sentry == 'Enable' %}
 Sentry.config(sentryUrl).install();
+{%endif%}
 
 const persistConfig = {
   key: 'root',
@@ -39,7 +42,10 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 const sagaMiddleware = createSagaMiddleware();
-const sentryReduxMiddleware = createRavenMiddleware(Sentry, {});
+{% if cookiecutter.sentry == 'Enable' %}
+const sentryReduxMiddleware =createRavenMiddleware(Sentry, {});
+{%endif%}
+
 
 export default () => {
   const store = createStore(
@@ -47,7 +53,9 @@ export default () => {
     {},
     composeWithDevTools(applyMiddleware(
       sagaMiddleware,
-      sentryReduxMiddleware,
+      {% if cookiecutter.sentry == 'Enable' %}
+     sentryReduxMiddleware,
+     {%endif%}
     )),
   );
   sagaMiddleware.run(rootSaga);

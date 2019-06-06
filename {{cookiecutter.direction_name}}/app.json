@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-cookiecutter",
-    "slug": "expo-cookiecutter",
+    "name": "{{cookiecutter.app_name}}",
+    "slug": "{{cookiecutter.slug}}",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [
